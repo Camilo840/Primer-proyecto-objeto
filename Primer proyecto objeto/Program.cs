@@ -17,6 +17,8 @@ namespace Primer_proyecto_objeto
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmSueldo());
+            
+
         }
     }
 }

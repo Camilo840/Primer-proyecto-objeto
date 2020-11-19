@@ -77,16 +77,54 @@ namespace Primer_proyecto_objeto
                 return; //abandonar
 
             }
+
+            if (Double.TryParse(txthora.Text, out double horasTrab) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+            if (Double.TryParse(txtvalorh.Text, out double valorHora) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+            if (Double.TryParse(txtbono.Text, out double bono) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+            if (Double.TryParse(txtaso.Text, out double aso) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+            if (Double.TryParse(txtbar.Text, out double bar) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+            if (Double.TryParse(txtcuentaporpagar.Text, out double pagar) == false)
+            {
+                MessageBox.Show("Por favor ingresa solo variables numéricas.");
+                this.txthora.Focus();
+                return;
+            }
+
             //sumar los ingresos
-            double horasTrab = double.Parse(this.txthora.Text);
-            double valorHora = double.Parse(this.txtvalorh.Text);
-            double bono = double.Parse(this.txtbono.Text);
+            //double horasTrab = double.Parse(this.txthora.Text);
+            //double valorHora = double.Parse(this.txtvalorh.Text);
+            //double bono = double.Parse(this.txtbono.Text);
             double totIng = horasTrab * valorHora + bono;
             this.txttotalingreso.Text = totIng.ToString();
             //suma de los ingresos
-            double aso = double.Parse(this.txtaso.Text);
-            double bar = double.Parse(this.txtbar.Text);
-            double pagar = double.Parse(this.txtcuentaporpagar.Text);
+            //double aso = double.Parse(this.txtaso.Text);
+            //double bar = double.Parse(this.txtbar.Text);
+           // double pagar = double.Parse(this.txtcuentaporpagar.Text);
             double totEgr = aso + bar + pagar;
             this.txttotalegresos.Text = totEgr.ToString();
 

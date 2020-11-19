@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frmenteroabinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmenteroabinario.Designer.cs">
+      <DependentUpon>Frmenteroabinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSueldo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frmenteroabinario.resx">
+      <DependentUpon>Frmenteroabinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSueldo.resx">
       <DependentUpon>FrmSueldo.cs</DependentUpon>
     </EmbeddedResource>
