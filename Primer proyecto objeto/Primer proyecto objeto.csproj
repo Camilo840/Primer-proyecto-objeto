@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmenteroabin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmenteroabin.Designer.cs">
+      <DependentUpon>frmenteroabin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frmenteroabinario.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frmenteroabinario.Designer.cs">
-      <DependentUpon>Frmenteroabinario.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmenupri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenupri.Designer.cs">
+      <DependentUpon>frmmenupri.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSueldo.cs">
       <SubType>Form</SubType>
@@ -64,16 +70,25 @@
     <Compile Include="FrmSueldo.Designer.cs">
       <DependentUpon>FrmSueldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Primo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Primo.Designer.cs">
+      <DependentUpon>Primo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frmenteroabinario.resx">
-      <DependentUpon>Frmenteroabinario.cs</DependentUpon>
+    <EmbeddedResource Include="frmmenupri.resx">
+      <DependentUpon>frmmenupri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSueldo.resx">
       <DependentUpon>FrmSueldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primo.resx">
+      <DependentUpon>Primo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
