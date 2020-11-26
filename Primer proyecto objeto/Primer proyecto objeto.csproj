@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clase\Class1.cs" />
+    <Compile Include="Clase\FormularioEjercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clase\FormularioEjercicios.Designer.cs">
+      <DependentUpon>FormularioEjercicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="EnteroaBinario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabladeMultiplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabladeMultiplicar.Designer.cs">
+      <DependentUpon>TabladeMultiplicar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clase\FormularioEjercicios.resx">
+      <DependentUpon>FormularioEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EnteroaBinario.resx">
       <DependentUpon>EnteroaBinario.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +124,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabladeMultiplicar.resx">
+      <DependentUpon>TabladeMultiplicar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
