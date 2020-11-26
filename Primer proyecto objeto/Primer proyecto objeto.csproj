@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnteroaBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnteroaBinario.Designer.cs">
+      <DependentUpon>EnteroaBinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmenteroabin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EnteroaBinario.resx">
+      <DependentUpon>EnteroaBinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
